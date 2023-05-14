@@ -1,0 +1,57 @@
+{% extends 'layout.html.twig' %}
+
+
+{% block title %}Bienvenue sur la page de la ville historique de Arras{% endblock %}
+{% block desc %}Plus qu'une ville, une passion !{% endblock %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="/assets/css/ville2.css">
+<link rel="stylesheet" href="/assets/css/api.css">
+{% endblock %}
+
+{% block content %}
+
+	<div id="container">
+		<div class="slide anim-in">
+        	<h1>La météo à Arras</h1>
+			<div class="images" style="background-image: url('/assets/img/Arras/627cd4c13daedbe33d0bf3d8dcd756e9.jpg')"></div>
+			
+			<div class="cont">
+				<p id="temp">
+					<span id="city"></span><br>
+					Température : <span id="temperature_label"></span> °C
+				</p>
+			</div>
+		</div>
+		<div class="slide anim-in">
+			<div class="image" style="background-image: url(/assets/img/Arras/R.jpg);"></div>
+			<div class="overlay"></div>
+			<div class="content">
+				<h1 class="title" data-title="Le Beffroi">Le Beffroi</h1>
+				<ul class="city-info">
+					<li>Le Beffroi d’Arras est un magnifique bâtiment historique situé dans le cœur de la ville d’Arras. Si vous prévoyez un voyage dans les Hauts-de-France, le Beffroi vaut vraiment la peine d’être visité.</li>
+				</ul>
+			</div>
+		</div>
+		<div class="slide anim-in">
+			<div class="image" style="background-image: url(/assets/img/Arras/jardin-des-alees.jpg);"></div>
+			<div class="overlay"></div>
+			<div class="content">
+				<h1 class="title" data-title="Jardin des Alées">Jardin des Alées</h1>
+				<ul class="city-info">
+					<li>Le jardin des Allées a de nombreux arbres bi-centenaires... Hêtres pourpres, Séquoia géant, Pawlonia impérial, Tulipier de Virginie, Ginko biloba …</li>
+				</ul>
+			</div>
+		</div>
+		<div class="slide anim-in">
+			<div class="image" style="background-image: url(/assets/img/Arras/CATACOMBS.webp);"></div>
+			<div class="overlay"></div>
+			<div class="content">
+				<h1 class="title" data-title="Les boves">Les boves</h1>
+				<ul class="city-info">
+					<li>Les boves d’Arras sont creusées dès le 9e siècle pour construire les édifices religieux et le premier rempart de la ville.</li>
+				</ul>
+			</div>
+		</div>
+
+	{% endblock %}

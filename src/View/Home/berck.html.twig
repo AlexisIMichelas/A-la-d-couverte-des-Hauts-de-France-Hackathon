@@ -1,0 +1,59 @@
+{% extends 'layout.html.twig' %}
+
+
+{% block title %}Bienvenue sur la page de la ville historique de Berck{% endblock %}
+{% block desc %}Plus qu'une ville, une passion !{% endblock %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="/assets/css/ville2.css">
+<link rel="stylesheet" href="/assets/css/api.css">
+{% endblock %}
+
+{% block content %}
+
+	<div id="container">
+			<div class="slide anim-in">
+
+        <h1>Berck</h1>
+			<div class="images" style="background-image: url('/assets/img/berck/OIP.jpg')"></div>
+			<div class="overlay"></div>
+
+			<div class="cont">
+				<p id="temp">
+					<span id="city"></span><br>
+					Température : <span id="temperature_label"></span> °C
+				</p>
+			</div>
+		</div>
+		<div class="slide anim-in">
+			<div class="image" style="background-image: url('/assets/img/berck/cerf volant.jpg');"></div>
+			<div class="overlay"></div>
+			<div class="content">
+				<h1 class="title" data-title="Cerfs-volants">Cerfs-volants</h1>
+				<ul class="city-info">
+					<li> C’est l’un des rendez-vous incontournables des Hauts-de-France : les Rencontres internationales de cerfs-volants à Berck dans le Pas-de-Calais.</li>
+				</ul>
+			</div>
+		</div>
+		<div class="slide anim-in">
+			<div class="image" style="background-image: url(/assets/img/berck/photo6jpg.jpg);"></div>
+			<div class="overlay"></div>
+			<div class="content">
+				<h1 class="title" data-title="Berck">Berck</h1>
+				<ul class="city-info">
+					<li>Berck, parfois appelée Berck-sur-Mer, est une commune française située dans le département du Pas-de-Calais, en région Hauts-de-France.C'est une station balnéaire du sud de la Côte d'Opale</li>
+				</ul>
+			</div>
+		</div>
+		<div class="slide anim-in">
+			<div class="image" style="background-image: url('/assets/img/berck/OIP (4).jpg');"></div>
+			<div class="overlay"></div>
+			<div class="content">
+				<h1 class="title" data-title="Baie D'Authie">Baie D'Authie</h1>
+				<ul class="city-info">
+					<li>Une balade absolument magnifique, à marée basse la vue est splendide et on voit les phoques se prélasser et jouer, pensez à prendre des jumelles.</li>
+				</ul>
+			</div>
+		</div>
+
+	{% endblock %}

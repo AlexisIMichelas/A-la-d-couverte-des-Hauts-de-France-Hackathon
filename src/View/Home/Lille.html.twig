@@ -1,0 +1,58 @@
+{% extends 'layout.html.twig' %}
+
+
+{% block title %}Bienvenue sur la page de la ville historique de Lille{% endblock %}
+{% block desc %}Plus qu'une ville, une passion !{% endblock %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="/assets/css/ville2.css">
+<link rel="stylesheet" href="/assets/css/api.css">
+{% endblock %}
+
+{% block content %}
+
+<div id="container">
+		<div class="slide anim-in">
+        <h1 id="meteo">La météo à Lille</h1>
+			<div class="images" style="background-image: url(/assets/img/lens/OIP.jpg)"></div>
+
+			<div class="cont">
+				<p id="temp">
+					<span id="city"></span><br>
+					Température : <span id="temperature_label"></span> °C
+				</p>
+			</div>
+		</div>
+
+		<div class="slide anim-in">
+			<div class="image" style="background-image: url('assets/img/Lille/stade lille.jpg');"></div>
+			<div class="overlay"></div>
+			<div class="content">
+				<h1 class="title" data-title="Stade P. Mauroy">Stade P. Mauroy</h1>
+				<ul class="city-info">
+					<li>De par ses multiples configurations possibles et sa forte jauge de spectateurs, il est régulièrement choisi pour accueillir de nombreux événements importants, en dehors des rencontres sportivives, comme des concerts, etc.</li>
+				</ul>
+			</div>
+		</div>
+		<div class="slide anim-in">
+			<div class="image" style="background-image: url(/assets/img/Lille/braderie-lille-fredv-flickr.jpg);"></div>
+			<div class="overlay"></div>
+			<div class="content">
+				<h1 class="title" data-title="Braderie de Lille">Braderie de Lille</h1>
+				<ul class="city-info">
+					<li>Ses origines remontent au XII siècle et elle accueille chaque année entre deux et trois millions de visiteurs.</li>
+				</ul>
+			</div>
+		</div>
+		<div class="slide anim-in">
+			<div class="image" style="background-image: url(/assets/img/Lille/losc.jpg);"></div>
+			<div class="overlay"></div>
+			<div class="content">
+				<h1 class="title" data-title="LOSC">LOSC</h1>
+				<ul class="city-info">
+					<li>Le Lille OSC (couramment appelé LOSC), est un club de football français fondé à Lille en septembre 1944 sous le nom de Stade lillois.</li>
+				</ul>
+			</div>
+		</div>
+
+	{% endblock %}
